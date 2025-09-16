@@ -13,8 +13,11 @@ const volunteerItems = [volunteerExperience];
 const getDate = (item: VolunteerExperienceType) =>
 	`${item.startDate}–${item.endDate}`;
 
-const getInfo = (item: VolunteerExperienceType) =>
-	`${item.position} | <i>${item.organization}</i> | ${item.location}`;
+const getOrganization = (item: VolunteerExperienceType) => `<i>${item.organization}</i>`;
+
+const getPosition = (item: VolunteerExperienceType) => item.position;
+
+const getLocation = (item: VolunteerExperienceType) => item.location;
 
 const getResponsibilities = (item: VolunteerExperienceType) =>
 	item.responsibilities;
@@ -24,6 +27,8 @@ const getResponsibilities = (item: VolunteerExperienceType) =>
   title="VOLUNTEER EXPERIENCE"
   items={volunteerItems}
   getDate={getDate}
-  getInfo={getInfo}
+  getOrganization={getOrganization}
+  getPosition={getPosition}
+  getLocation={getLocation}
   getResponsibilities={getResponsibilities}
 />

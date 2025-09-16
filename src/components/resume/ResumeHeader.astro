@@ -1,16 +1,26 @@
 ---
 export interface Props {
 	date: string;
-	info: string;
+	organization: string;
+	position: string;
+	location: string;
 	className?: string;
 }
 
-const { date, info, className = "" } = Astro.props;
+const { date, organization, position, location, className = "" } = Astro.props;
 ---
 
 <div class={`resume-header ${className}`}>
-  <span class="info" set:html={info} />
-  <span class="date">{date}</span>
+  <div class="header-content">
+    <div class="header-row">
+      <span class="organization" set:html={organization} />
+      <span class="date">{date}</span>
+    </div>
+    <div class="header-row">
+      <span class="position">{position}</span>
+      <span class="location">{location}</span>
+    </div>
+  </div>
 </div>
 
 <style>
@@ -21,12 +31,26 @@ const { date, info, className = "" } = Astro.props;
     width: 100%;
   }
 
-  .info {
+  .header-content {
     flex: 1;
-    padding-right: 10px;
   }
 
-  .date {
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .organization {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .position {
+    flex: 1;
+  }
+
+  .date, .location {
     white-space: nowrap;
     padding-left: 6px;
     text-align: right;

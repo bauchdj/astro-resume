@@ -6,7 +6,9 @@ export interface Props<T> {
 	title: string;
 	items: T[];
 	getDate: (item: T) => string;
-	getInfo: (item: T) => string;
+	getOrganization: (item: T) => string;
+	getPosition: (item: T) => string;
+	getLocation: (item: T) => string;
 	getResponsibilities?: (item: T) => string[];
 	className?: string;
 	itemClassName?: string;
@@ -16,7 +18,9 @@ const {
 	title,
 	items,
 	getDate,
-	getInfo,
+	getOrganization,
+	getPosition,
+	getLocation,
 	getResponsibilities,
 	className = "",
 	itemClassName = "",
@@ -31,7 +35,9 @@ const {
       <div class={`${title.toLowerCase().replace(/\s+/g, '-')}-item ${itemClassName}`}>
         <ResumeHeader 
           date={getDate(item)}
-          info={getInfo(item)}
+          organization={getOrganization(item)}
+          position={getPosition(item)}
+          location={getLocation(item)}
           className={`${title.toLowerCase().replace(/\s+/g, '-')}-header`}
         />
         {getResponsibilities && (

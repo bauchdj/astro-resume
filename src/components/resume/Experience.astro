@@ -10,8 +10,11 @@ const { experience } = Astro.props;
 
 const getDate = (item: ExperienceItem) => `${item.startDate}–${item.endDate}`;
 
-const getInfo = (item: ExperienceItem) =>
-	`${item.position} | <i>${item.company}</i> | ${item.location}`;
+const getOrganization = (item: ExperienceItem) => `<i>${item.company}</i>`;
+
+const getPosition = (item: ExperienceItem) => item.position;
+
+const getLocation = (item: ExperienceItem) => item.location;
 
 const getResponsibilities = (item: ExperienceItem) => item.responsibilities;
 ---
@@ -20,6 +23,8 @@ const getResponsibilities = (item: ExperienceItem) => item.responsibilities;
   title="EXPERIENCE"
   items={experience}
   getDate={getDate}
-  getInfo={getInfo}
+  getOrganization={getOrganization}
+  getPosition={getPosition}
+  getLocation={getLocation}
   getResponsibilities={getResponsibilities}
 />

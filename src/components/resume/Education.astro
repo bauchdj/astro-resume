@@ -12,8 +12,11 @@ const educationItems = [education];
 
 const getDate = (edu: EducationType) => edu.graduationDate;
 
-const getInfo = (edu: EducationType) =>
-	`${edu.degree}, ${edu.emphasis}${edu.minor ? `, ${edu.minor}` : ""} | <i>${edu.school}</i> | ${edu.location}`;
+const getOrganization = (edu: EducationType) => `<i>${edu.school}</i>`;
+
+const getPosition = (edu: EducationType) => `${edu.degree}, ${edu.emphasis}${edu.minor ? `, ${edu.minor}` : ""}`;
+
+const getLocation = (edu: EducationType) => edu.location;
 
 const getResponsibilities = (edu: EducationType) => [
 	`GPA: ${edu.gpa} | ${edu.scholarship}`,
@@ -25,6 +28,8 @@ const getResponsibilities = (edu: EducationType) => [
   title="EDUCATION"
   items={educationItems}
   getDate={getDate}
-  getInfo={getInfo}
+  getOrganization={getOrganization}
+  getPosition={getPosition}
+  getLocation={getLocation}
   getResponsibilities={getResponsibilities}
 />
