@@ -1,0 +1,109 @@
+David Bauch 
+
+linkedin.com/in/david-bauch-ii  
+
+(720) 361-8277 · jamesbauch@gmail.com 
+
+education 
+
+Brigham Young University	April 2026 
+
+Bachelor of Computer Science, Software Engineering Emphasis, Entrepreneurship Minor	Provo, UT 
+
+GPA 3.94  
+
+Scholarships: Wessel/Marshal Memorial – Full-ride 
+
+Relevant Coursework: Data Structures, Algorithm Design & Analysis, Systems Programming, Computer Networking, Software Design, Web Programming, Computer Systems, Database Modeling & Relational Databases, Linear Algebra, Statistics, Ethics 
+
+  
+
+experience 
+
+Nimbus	April 2025 – Present 
+
+Co-Founder & CTO	Provo, UT 
+
+Cloudflare, VPCs on Fly.io 
+
+Hono API, Next.js, Bun.sh 
+
+Integrated Google, OneDrive, Dropbox, Box APIs 
+
+Borea	Oct 2024 – April 2025 
+
+Co-Founder & CTO	Provo, UT 
+
+Python SDK Generator ... 
+
+Validated and iterated our products for 20-25 hours per week as a full-time student 
+
+Developed analytics dashboard and front-end script to analyze website usage 
+
+Base2Summit LLC	June 2024 – Aug 2024 
+
+Full Stack Developer	Boulder, CO 
+
+Resolved 4-10 bugs on Jira per week for critical web app product: MongoDB, Handlebars.js 
+
+Constructed custom charts to view trends for critical system failures: Apexcharts.js, MongoDB 
+
+Collaborated over Jira and GitHub to manage bugs and PRs 
+
+Coordinated over Microsoft teams with 2 developers daily to resolves issues 
+
+Brigham Young University Computer Science Dept	Jan 2024 – April 2024 
+
+Web Programming Teaching Assistant	Provo, UT 
+
+Mentored 50-60 students weekly, one on one, to architect and debug web apps: AWS, React 
+
+Graded and code-reviewed 60+ students’ assignments weekly via GitHub 
+
+Brigham Young University Computer Science Dept	Aug 2023 – April 2024 
+
+Introduction to Computer Science Teaching Assistant	Provo, UT 
+
+Instructed 40-50 students twice a week on fundamentals of CS with Python 
+
+Mentored 25-35 students one on one weekly to debug their code and explain CS concepts 
+
+Adapted to Windows, Mac, and Linux to install and debug Python 
+
+ 
+
+VOLUNTEER EXPERIENCE 
+
+The Church of Jesus Christ of Latter-day Saints	Colorado Springs, Colorado 
+
+Full-time Volunteer Representative	Oct 2020 – Oct 2022 
+
+Organized and analyzed Facebook ads data in Google Sheets using JavaScript 
+
+Created weekly data reports from Facebook ads for 6 months 
+
+Budgeted and ran Facebook ads for the southeastern Colorado area for 6 months 
+
+Led individual and group trainings weekly for volunteers for 18 months 
+
+Developed a healthy, hard-working relationship with 14 different assigned companions over 2 years 
+
+Scheduled and coordinated appointments with 50+ people per week 
+
+ 
+
+skills 
+
+Programming Languages – TypeScript, JavaScript, Node.js, Python, Java, Go, C++, C, SQL 
+
+Software Development – Git, GitHub, Atlassian Jira, Jest Testing Framework, OOP, Debugging 
+
+Databases – MongoDB (Mongoose), MySQL, PostgreSQL, SQLite 
+
+Web Development – Svelte, React, TRPC, Express.js, jQuery, Bootstrap, HTML, CSS 
+
+Operating Systems – Linux (Ubuntu, Debian), MacOS, Windows, Shell scripting, SSH, Vim 
+
+Networking – HTTP / HTTPS, TLS / SSL, WebSockets, IPv4 / IPv6 
+
+Cloud – AWS (EC2, SDK, Lambda, IAM, S3, DynamoDB), Containerization (Docker), Fly.io, Cloudflare 
