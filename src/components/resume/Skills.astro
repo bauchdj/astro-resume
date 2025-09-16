@@ -1,0 +1,47 @@
+---
+import type { Skills as SkillsType } from '../../types/resume';
+import ResumeSectionStyles from './ResumeSectionStyles.astro';
+
+export interface Props {
+  skills: SkillsType;
+}
+
+const { skills } = Astro.props;
+---
+
+<section class="resume-section">
+  <h2>SKILLS</h2>
+  <hr />
+  <table class="skills-table">
+    <tr>
+      <td>Programming Languages:</td>
+      <td>{skills.programmingLanguages.join(', ')}</td>
+    </tr>
+    <tr>
+      <td>Software Development:</td>
+      <td>{skills.softwareDevelopment.join(', ')}</td>
+    </tr>
+    <tr>
+      <td>Databases:</td>
+      <td>{skills.databases.join(', ')}</td>
+    </tr>
+    <tr>
+      <td>Web Development:</td>
+      <td>{skills.webDevelopment.join(', ')}</td>
+    </tr>
+    <tr>
+      <td>Operating Systems:</td>
+      <td>{skills.operatingSystems.join(', ')}</td>
+    </tr>
+    <tr>
+      <td>Networking:</td>
+      <td>{skills.networking.join(', ')}</td>
+    </tr>
+    <tr>
+      <td>Cloud:</td>
+      <td>{skills.cloud.join(', ')}</td>
+    </tr>
+  </table>
+</section>
+
+<ResumeSectionStyles />

@@ -1,0 +1,30 @@
+---
+import type { VolunteerExperience as VolunteerExperienceType } from '../../types/resume';
+import ResumeSectionStyles from './ResumeSectionStyles.astro';
+
+export interface Props {
+  volunteerExperience: VolunteerExperienceType;
+}
+
+const { volunteerExperience } = Astro.props;
+---
+
+<section class="resume-section">
+  <h2>VOLUNTEER EXPERIENCE</h2>
+  <hr />
+  <div class="volunteer-item">
+    <div class="volunteer-header">
+      <span class="date">{volunteerExperience.startDate}&ndash;{volunteerExperience.endDate}</span>
+      <span class="position-info">
+        {volunteerExperience.position} | <i>{volunteerExperience.organization}</i> | {volunteerExperience.location}
+      </span>
+    </div>
+    <ul>
+      {volunteerExperience.responsibilities.map((resp) => (
+        <li>{resp}</li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<ResumeSectionStyles />

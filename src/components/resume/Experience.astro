@@ -1,0 +1,34 @@
+---
+import type { ExperienceItem } from '../../types/resume';
+import ResumeSectionStyles from './ResumeSectionStyles.astro';
+
+export interface Props {
+  experience: ExperienceItem[];
+}
+
+const { experience } = Astro.props;
+---
+
+<section class="resume-section">
+  <h2>EXPERIENCE</h2>
+  <hr />
+  <div class="experience-list">
+    {experience.map((item) => (
+      <div class="experience-item">
+        <div class="experience-header">
+          <span class="date">{item.startDate}&ndash;{item.endDate}</span>
+          <span class="position-info">
+            {item.position} | <i>{item.company}</i> | {item.location}
+          </span>
+        </div>
+        <ul>
+          {item.responsibilities.map((resp) => (
+            <li>{resp}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>
+
+<ResumeSectionStyles />

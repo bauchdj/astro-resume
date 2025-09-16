@@ -1,0 +1,165 @@
+import type { ResumeData } from '../types/resume';
+
+export const resumeData: ResumeData = {
+  name: 'David Bauch',
+  contact: {
+    phone: '(720) 361-8277',
+    email: 'jamesbauch@gmail.com',
+    linkedin: 'linkedin.com/in/david-bauch-ii'
+  },
+  education: {
+    degree: 'B.S. in Computer Science',
+    emphasis: 'Software Engineering Emphasis',
+    minor: 'Entrepreneurship Minor',
+    school: 'Brigham Young University',
+    location: 'Provo, UT',
+    graduationDate: 'Dec. 2025',
+    gpa: '3.94',
+    scholarship: 'Full-ride Wessel/Marshal Memorial Scholarship',
+    relevantCoursework: [
+      'Data Structures',
+      'Algorithm Design & Analysis',
+      'Systems Programming',
+      'Computer Networking',
+      'Software Design',
+      'Web Programming',
+      'Computer Systems',
+      'Database Modeling & Relational Databases',
+      'Linear Algebra',
+      'Statistics',
+      'Ethics'
+    ]
+  },
+  experience: [
+    {
+      company: 'Nimbus',
+      position: 'Co-Founder & CTO',
+      location: 'Provo, UT',
+      startDate: 'Apr. 2025',
+      endDate: 'Present',
+      responsibilities: [
+        'Cloudflare, VPCs on Fly.io',
+        'Hono API, Next.js, Bun.sh',
+        'Integrated Google, OneDrive, Dropbox, Box APIs'
+      ]
+    },
+    {
+      company: 'Borea',
+      position: 'Co-Founder & CTO',
+      location: 'Provo, UT',
+      startDate: 'Oct. 2024',
+      endDate: 'Apr. 2025',
+      responsibilities: [
+        'Python SDK Generator',
+        'Validated and iterated our products for 20-25 hours per week as a full-time student',
+        'Developed analytics dashboard and front-end script to analyze website usage'
+      ]
+    },
+    {
+      company: 'Base2Summit LLC',
+      position: 'Full Stack Developer',
+      location: 'Boulder, CO',
+      startDate: 'June 2024',
+      endDate: 'Aug. 2024',
+      responsibilities: [
+        'Resolved 4-10 bugs on Jira per week for critical web app product: MongoDB, Handlebars.js',
+        'Constructed custom charts to view trends for critical system failures: Apexcharts.js, MongoDB',
+        'Collaborated over Jira and GitHub to manage bugs and PRs',
+        'Coordinated over Microsoft teams with 2 developers daily to resolves issues'
+      ]
+    },
+    {
+      company: 'Brigham Young University Computer Science Dept',
+      position: 'Web Programming Teaching Assistant',
+      location: 'Provo, UT',
+      startDate: 'Jan. 2024',
+      endDate: 'Apr. 2024',
+      responsibilities: [
+        'Mentored 50-60 students weekly, one on one, to architect and debug web apps: AWS, React',
+        'Graded and code-reviewed 60+ students\' assignments weekly via GitHub'
+      ]
+    },
+    {
+      company: 'Brigham Young University Computer Science Dept',
+      position: 'Introduction to Computer Science Teaching Assistant',
+      location: 'Provo, UT',
+      startDate: 'Aug. 2023',
+      endDate: 'Apr. 2024',
+      responsibilities: [
+        'Instructed 40-50 students twice a week on fundamentals of CS with Python',
+        'Mentored 25-35 students one on one weekly to debug their code and explain CS concepts',
+        'Adapted to Windows, Mac, and Linux to install and debug Python'
+      ]
+    }
+  ],
+  volunteerExperience: {
+    organization: 'The Church of Jesus Christ of Latter-day Saints',
+    position: 'Full-time Volunteer Representative',
+    location: 'Colorado Springs, Colorado',
+    startDate: 'Oct. 2020',
+    endDate: 'Oct. 2022',
+    responsibilities: [
+      'Organized and analyzed Facebook ads data in Google Sheets using JavaScript',
+      'Created weekly data reports from Facebook ads for 6 months',
+      'Budgeted and ran Facebook ads for the southeastern Colorado area for 6 months',
+      'Led individual and group trainings weekly for volunteers for 18 months',
+      'Developed a healthy, hard-working relationship with 14 different assigned companions over 2 years',
+      'Scheduled and coordinated appointments with 50+ people per week'
+    ]
+  },
+  skills: {
+    programmingLanguages: [
+      'TypeScript',
+      'JavaScript',
+      'Node.js',
+      'Python',
+      'Java',
+      'C++',
+      'C',
+      'SQL'
+    ],
+    softwareDevelopment: [
+      'Git',
+      'GitHub',
+      'Atlassian Jira',
+      'Jest Testing Framework',
+      'OOP',
+      'Debugging'
+    ],
+    databases: [
+      'MongoDB (Mongoose)',
+      'MySQL',
+      'PostgreSQL',
+      'SQLite'
+    ],
+    webDevelopment: [
+      'Svelte',
+      'React',
+      'TRPC',
+      'Express.js',
+      'jQuery',
+      'Bootstrap',
+      'HTML',
+      'CSS'
+    ],
+    operatingSystems: [
+      'Linux (Ubuntu, Debian)',
+      'MacOS',
+      'Windows',
+      'Shell scripting',
+      'SSH',
+      'Vim'
+    ],
+    networking: [
+      'HTTP / HTTPS',
+      'TLS / SSL',
+      'WebSockets',
+      'IPv4 / IPv6'
+    ],
+    cloud: [
+      'AWS (EC2, SDK, Lambda, IAM, S3, DynamoDB)',
+      'Containerization (Docker, Fly.io)',
+      'Cloudflare'
+    ]
+  }
+};

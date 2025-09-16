@@ -1,0 +1,17 @@
+---
+import ResumeLayout from '../layouts/ResumeLayout.astro';
+import Header from '../components/resume/Header.astro';
+import Education from '../components/resume/Education.astro';
+import Experience from '../components/resume/Experience.astro';
+import VolunteerExperience from '../components/resume/VolunteerExperience.astro';
+import Skills from '../components/resume/Skills.astro';
+import { resumeData } from '../data/resumeData';
+---
+
+<ResumeLayout title={`${resumeData.name} - Resume`}>
+  <Header name={resumeData.name} contact={resumeData.contact} />
+  <Education education={resumeData.education} />
+  <Experience experience={resumeData.experience} />
+  <VolunteerExperience volunteerExperience={resumeData.volunteerExperience} />
+  <Skills skills={resumeData.skills} />
+</ResumeLayout>

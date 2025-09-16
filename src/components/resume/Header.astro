@@ -1,0 +1,43 @@
+---
+import type { ContactInfo } from '../../types/resume';
+
+export interface Props {
+  name: string;
+  contact: ContactInfo;
+}
+
+const { name, contact } = Astro.props;
+---
+
+<header class="resume-header">
+  <h1>{name}</h1>
+  <div class="contact-info">
+    <a href={`tel:${contact.phone.replace(/\D/g, '')}`}>{contact.phone}</a> | 
+    <a href={`mailto:${contact.email}`}>{contact.email}</a> | 
+    <a href={`https://${contact.linkedin}`} target="_blank" rel="noopener noreferrer">{contact.linkedin}</a>
+  </div>
+</header>
+
+<style>
+  .resume-header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 24pt;
+    text-align: center;
+    margin: 0;
+  }
+
+  .contact-info {
+    text-align: center;
+    font-size: 10.5pt;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+</style>
