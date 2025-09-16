@@ -1,5 +1,6 @@
 ---
 import type { Education as EducationType } from "../../types/resume";
+import ResumeHeader from "./ResumeHeader.astro";
 import ResumeSectionStyles from "./ResumeSectionStyles.astro";
 
 export interface Props {
@@ -13,13 +14,11 @@ const { education } = Astro.props;
   <h2>EDUCATION</h2>
   <hr />
   <div class="education-item">
-    <div class="education-header">
-      <span class="date">{education.graduationDate}</span>
-      <span class="degree-info">
-        {education.degree}, {education.emphasis}{education.minor && `, ${education.minor}`} | 
-        <i>{education.school}</i> | {education.location}
-      </span>
-    </div>
+    <ResumeHeader 
+      date={education.graduationDate} 
+      info={`${education.degree}, ${education.emphasis}${education.minor ? `, ${education.minor}` : ''} | <i>${education.school}</i> | ${education.location}`}
+      className="education-header"
+    />
     <ul>
       <li>GPA: {education.gpa} | {education.scholarship}</li>
       <li>Relevant Coursework: {education.relevantCoursework.join(', ')}</li>

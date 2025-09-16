@@ -1,5 +1,6 @@
 ---
 import type { VolunteerExperience as VolunteerExperienceType } from "../../types/resume";
+import ResumeHeader from "./ResumeHeader.astro";
 import ResumeSectionStyles from "./ResumeSectionStyles.astro";
 
 export interface Props {
@@ -13,12 +14,11 @@ const { volunteerExperience } = Astro.props;
   <h2>VOLUNTEER EXPERIENCE</h2>
   <hr />
   <div class="volunteer-item">
-    <div class="volunteer-header">
-      <span class="date">{volunteerExperience.startDate}&ndash;{volunteerExperience.endDate}</span>
-      <span class="position-info">
-        {volunteerExperience.position} | <i>{volunteerExperience.organization}</i> | {volunteerExperience.location}
-      </span>
-    </div>
+    <ResumeHeader 
+      date={`${volunteerExperience.startDate}–${volunteerExperience.endDate}`}
+      info={`${volunteerExperience.position} | <i>${volunteerExperience.organization}</i> | ${volunteerExperience.location}`}
+      className="volunteer-header"
+    />
     <ul>
       {volunteerExperience.responsibilities.map((resp) => (
         <li>{resp}</li>

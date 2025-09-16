@@ -1,5 +1,6 @@
 ---
 import type { ExperienceItem } from "../../types/resume";
+import ResumeHeader from "./ResumeHeader.astro";
 import ResumeSectionStyles from "./ResumeSectionStyles.astro";
 
 export interface Props {
@@ -15,12 +16,11 @@ const { experience } = Astro.props;
   <div class="experience-list">
     {experience.map((item) => (
       <div class="experience-item">
-        <div class="experience-header">
-          <span class="date">{item.startDate}&ndash;{item.endDate}</span>
-          <span class="position-info">
-            {item.position} | <i>{item.company}</i> | {item.location}
-          </span>
-        </div>
+        <ResumeHeader 
+          date={`${item.startDate}–${item.endDate}`}
+          info={`${item.position} | <i>${item.company}</i> | ${item.location}`}
+          className="experience-header"
+        />
         <ul>
           {item.responsibilities.map((resp) => (
             <li>{resp}</li>

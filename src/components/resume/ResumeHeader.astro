@@ -1,0 +1,34 @@
+---
+export interface Props {
+	date: string;
+	info: string;
+	className?: string;
+}
+
+const { date, info, className = "" } = Astro.props;
+---
+
+<div class={`resume-header ${className}`}>
+  <span class="info" set:html={info} />
+  <span class="date">{date}</span>
+</div>
+
+<style>
+  .resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .info {
+    flex: 1;
+    padding-right: 10px;
+  }
+
+  .date {
+    white-space: nowrap;
+    padding-left: 6px;
+    text-align: right;
+  }
+</style>
