@@ -39,15 +39,21 @@ const { date, organization, position, location, className = "" } = Astro.props;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 0.15rem;
+  }
+
+  .header-row:last-child {
+    margin-bottom: 0;
   }
 
   .organization {
     font-weight: bold;
-    font-style: italic;
   }
 
   .position {
     flex: 1;
+    font-style: italic;
+    font-weight: 500;
   }
 
   .date, .location {

@@ -13,7 +13,7 @@ const volunteerItems = [volunteerExperience];
 const getDate = (item: VolunteerExperienceType) =>
 	`${item.startDate}–${item.endDate}`;
 
-const getOrganization = (item: VolunteerExperienceType) => `<i>${item.organization}</i>`;
+const getOrganization = (item: VolunteerExperienceType) => `${item.organization}`;
 
 const getPosition = (item: VolunteerExperienceType) => item.position;
 

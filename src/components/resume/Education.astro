@@ -12,7 +12,7 @@ const educationItems = [education];
 
 const getDate = (edu: EducationType) => edu.graduationDate;
 
-const getOrganization = (edu: EducationType) => `<i>${edu.school}</i>`;
+const getOrganization = (edu: EducationType) => `${edu.school}`;
 
 const getPosition = (edu: EducationType) => `${edu.degree}, ${edu.emphasis}${edu.minor ? `, ${edu.minor}` : ""}`;
 
