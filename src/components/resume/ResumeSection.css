@@ -1,0 +1,14 @@
+.resume-section {
+	margin: 0;
+}
+
+h2 {
+	font-weight: bold;
+	margin: 0;
+	font-size: 12pt;
+}
+
+hr {
+	border: 0.5px solid #000;
+	margin: 0;
+}

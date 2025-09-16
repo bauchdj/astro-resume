@@ -1,5 +1,6 @@
 ---
 import type { Skills as SkillsType } from "../../types/resume";
+import "./ResumeSection.css";
 
 export interface Props {
 	skills: SkillsType;
@@ -44,21 +45,6 @@ const { skills } = Astro.props;
 </section>
 
 <style>
-    .resume-section {
-    margin: 0;
-  }
-
-  h2 {
-    font-weight: bold;
-    margin: 0;
-    font-size: 12pt;
-  }
-
-  hr {
-    border: 0.5px solid #000;
-    margin: 0;
-  }
-
   .skills-table {
     width: 100%;
     border-collapse: collapse;
