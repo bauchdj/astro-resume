@@ -1,17 +1,29 @@
 {
-  "name": "resume-astro",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^5.13.7"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.2.4"
-  }
+	"name": "resume-astro",
+	"type": "module",
+	"version": "0.0.1",
+	"packageManager": "bun@1.2.20",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "biome lint",
+		"lint:fix": "biome lint --write",
+		"format": "biome format --write",
+		"check": "biome check",
+		"check:fix": "biome check --write",
+		"knip": "knip-bun --config knip.config.ts",
+		"ch": "changeset"
+	},
+	"dependencies": {
+		"astro": "^5.13.7"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.4",
+		"@changesets/cli": "^2.29.7",
+		"@types/bun": "^1.2.22",
+		"knip": "^5.63.1",
+		"typescript": "^5.9.2"
+	}
 }
