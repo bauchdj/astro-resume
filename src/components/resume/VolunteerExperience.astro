@@ -10,11 +10,14 @@ const { volunteerExperience } = Astro.props;
 
 const volunteerItems = [volunteerExperience];
 
-const getDate = (item: VolunteerExperienceType) => `${item.startDate}–${item.endDate}`;
+const getDate = (item: VolunteerExperienceType) =>
+	`${item.startDate}–${item.endDate}`;
 
-const getInfo = (item: VolunteerExperienceType) => `${item.position} | <i>${item.organization}</i> | ${item.location}`;
+const getInfo = (item: VolunteerExperienceType) =>
+	`${item.position} | <i>${item.organization}</i> | ${item.location}`;
 
-const getResponsibilities = (item: VolunteerExperienceType) => item.responsibilities;
+const getResponsibilities = (item: VolunteerExperienceType) =>
+	item.responsibilities;
 ---
 
 <ResumeSection 

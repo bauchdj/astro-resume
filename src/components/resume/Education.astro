@@ -12,12 +12,12 @@ const educationItems = [education];
 
 const getDate = (edu: EducationType) => edu.graduationDate;
 
-const getInfo = (edu: EducationType) => 
-  `${edu.degree}, ${edu.emphasis}${edu.minor ? `, ${edu.minor}` : ''} | <i>${edu.school}</i> | ${edu.location}`;
+const getInfo = (edu: EducationType) =>
+	`${edu.degree}, ${edu.emphasis}${edu.minor ? `, ${edu.minor}` : ""} | <i>${edu.school}</i> | ${edu.location}`;
 
 const getResponsibilities = (edu: EducationType) => [
-  `GPA: ${edu.gpa} | ${edu.scholarship}`,
-  `Relevant Coursework: ${edu.relevantCoursework.join(', ')}`
+	`GPA: ${edu.gpa} | ${edu.scholarship}`,
+	`Relevant Coursework: ${edu.relevantCoursework.join(", ")}`,
 ];
 ---
 
