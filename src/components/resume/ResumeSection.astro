@@ -1,0 +1,49 @@
+---
+import ResumeHeader from "./ResumeHeader.astro";
+import ResumeSectionStyles from "./ResumeSectionStyles.astro";
+
+export interface Props<T> {
+	title: string;
+	items: T[];
+	getDate: (item: T) => string;
+	getInfo: (item: T) => string;
+	getResponsibilities?: (item: T) => string[];
+	className?: string;
+	itemClassName?: string;
+}
+
+const {
+	title,
+	items,
+	getDate,
+	getInfo,
+	getResponsibilities,
+	className = "",
+	itemClassName = "",
+} = Astro.props;
+---
+
+<section class={`resume-section ${className}`}>
+  <h2>{title}</h2>
+  <hr />
+  <div class={`${title.toLowerCase().replace(/\s+/g, '-')}-list`}>
+    {items.map((item: any) => (
+      <div class={`${title.toLowerCase().replace(/\s+/g, '-')}-item ${itemClassName}`}>
+        <ResumeHeader 
+          date={getDate(item)}
+          info={getInfo(item)}
+          className={`${title.toLowerCase().replace(/\s+/g, '-')}-header`}
+        />
+        {getResponsibilities && (
+          <ul>
+            {getResponsibilities(item).map((resp: unknown) => (
+              <li>{resp}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+    ))}
+  </div>
+</section>
+
+<ResumeSectionStyles />

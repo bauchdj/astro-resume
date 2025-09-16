@@ -1,30 +1,26 @@
 ---
 import type { VolunteerExperience as VolunteerExperienceType } from "../../types/resume";
-import ResumeHeader from "./ResumeHeader.astro";
-import ResumeSectionStyles from "./ResumeSectionStyles.astro";
+import ResumeSection from "./ResumeSection.astro";
 
 export interface Props {
 	volunteerExperience: VolunteerExperienceType;
 }
 
 const { volunteerExperience } = Astro.props;
+
+const volunteerItems = [volunteerExperience];
+
+const getDate = (item: VolunteerExperienceType) => `${item.startDate}–${item.endDate}`;
+
+const getInfo = (item: VolunteerExperienceType) => `${item.position} | <i>${item.organization}</i> | ${item.location}`;
+
+const getResponsibilities = (item: VolunteerExperienceType) => item.responsibilities;
 ---
 
-<section class="resume-section">
-  <h2>VOLUNTEER EXPERIENCE</h2>
-  <hr />
-  <div class="volunteer-item">
-    <ResumeHeader 
-      date={`${volunteerExperience.startDate}–${volunteerExperience.endDate}`}
-      info={`${volunteerExperience.position} | <i>${volunteerExperience.organization}</i> | ${volunteerExperience.location}`}
-      className="volunteer-header"
-    />
-    <ul>
-      {volunteerExperience.responsibilities.map((resp) => (
-        <li>{resp}</li>
-      ))}
-    </ul>
-  </div>
-</section>
-
-<ResumeSectionStyles />
+<ResumeSection 
+  title="VOLUNTEER EXPERIENCE"
+  items={volunteerItems}
+  getDate={getDate}
+  getInfo={getInfo}
+  getResponsibilities={getResponsibilities}
+/>

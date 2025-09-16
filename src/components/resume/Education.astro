@@ -1,29 +1,30 @@
 ---
 import type { Education as EducationType } from "../../types/resume";
-import ResumeHeader from "./ResumeHeader.astro";
-import ResumeSectionStyles from "./ResumeSectionStyles.astro";
+import ResumeSection from "./ResumeSection.astro";
 
 export interface Props {
 	education: EducationType;
 }
 
 const { education } = Astro.props;
+
+const educationItems = [education];
+
+const getDate = (edu: EducationType) => edu.graduationDate;
+
+const getInfo = (edu: EducationType) => 
+  `${edu.degree}, ${edu.emphasis}${edu.minor ? `, ${edu.minor}` : ''} | <i>${edu.school}</i> | ${edu.location}`;
+
+const getResponsibilities = (edu: EducationType) => [
+  `GPA: ${edu.gpa} | ${edu.scholarship}`,
+  `Relevant Coursework: ${edu.relevantCoursework.join(', ')}`
+];
 ---
 
-<section class="resume-section">
-  <h2>EDUCATION</h2>
-  <hr />
-  <div class="education-item">
-    <ResumeHeader 
-      date={education.graduationDate} 
-      info={`${education.degree}, ${education.emphasis}${education.minor ? `, ${education.minor}` : ''} | <i>${education.school}</i> | ${education.location}`}
-      className="education-header"
-    />
-    <ul>
-      <li>GPA: {education.gpa} | {education.scholarship}</li>
-      <li>Relevant Coursework: {education.relevantCoursework.join(', ')}</li>
-    </ul>
-  </div>
-</section>
-
-<ResumeSectionStyles />
+<ResumeSection 
+  title="EDUCATION"
+  items={educationItems}
+  getDate={getDate}
+  getInfo={getInfo}
+  getResponsibilities={getResponsibilities}
+/>
