@@ -14,7 +14,8 @@ const { name, contact } = Astro.props;
   <div class="contact-info">
     <a href={`tel:${contact.phone.replace(/\D/g, '')}`}>{contact.phone}</a> | 
     <a href={`mailto:${contact.email}`}>{contact.email}</a> | 
-    <a href={`https://${contact.linkedin}`} target="_blank" rel="noopener noreferrer">{contact.linkedin}</a>
+    <a href={`https://${contact.linkedin}`} target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+    <a href={`https://${contact.website}`} target="_blank" rel="noopener noreferrer">GitHub</a>
   </div>
 </header>
 

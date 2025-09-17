@@ -2,6 +2,7 @@ export interface ContactInfo {
 	phone: string;
 	email: string;
 	linkedin: string;
+	website: string;
 }
 
 export interface Education {
