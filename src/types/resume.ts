@@ -44,6 +44,8 @@ export interface Skills {
 	cloud: string[];
 }
 
+export type Hobbies = string[];
+
 export interface ResumeData {
 	name: string;
 	contact: ContactInfo;
@@ -51,4 +53,5 @@ export interface ResumeData {
 	experience: ExperienceItem[];
 	volunteerExperience: VolunteerExperience;
 	skills: Skills;
+	hobbies: Hobbies;
 }

@@ -1,24 +1,25 @@
 ---
-import type { Education as EducationType } from "../../types/resume";
+import type { Education } from "../../types/resume";
 import ResumeSection from "./ResumeSection.astro";
 
 export interface Props {
-	education: EducationType;
+	education: Education;
 }
 
 const { education } = Astro.props;
 
 const educationItems = [education];
 
-const getDate = (edu: EducationType) => edu.graduationDate;
+const getDate = (edu: Education) => edu.graduationDate;
 
-const getOrganization = (edu: EducationType) => `${edu.school}`;
+const getOrganization = (edu: Education) => `${edu.school}`;
 
-const getPosition = (edu: EducationType) => `${edu.degree}, ${edu.emphasis}${edu.minor ? `, ${edu.minor}` : ""}`;
+const getPosition = (edu: Education) =>
+	`${edu.degree}, ${edu.emphasis}${edu.minor ? `, ${edu.minor}` : ""}`;
 
-const getLocation = (edu: EducationType) => edu.location;
+const getLocation = (edu: Education) => edu.location;
 
-const getResponsibilities = (edu: EducationType) => [
+const getResponsibilities = (edu: Education) => [
 	`GPA: ${edu.gpa} | ${edu.scholarship}`,
 	`Relevant Coursework: ${edu.relevantCoursework.join(", ")}`,
 ];

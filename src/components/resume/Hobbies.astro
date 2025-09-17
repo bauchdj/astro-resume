@@ -1,0 +1,16 @@
+---
+import type { Hobbies } from "../../types/resume";
+import "./ResumeSection.css";
+
+export interface Props {
+	hobbies: Hobbies;
+}
+
+const { hobbies } = Astro.props;
+---
+
+<section class="resume-section">
+  <h2>HOBBIES</h2>
+  <hr />
+  <span>{hobbies.join(', ')}</span>
+</section>

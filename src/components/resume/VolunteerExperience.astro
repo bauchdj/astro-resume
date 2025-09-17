@@ -1,25 +1,25 @@
 ---
-import type { VolunteerExperience as VolunteerExperienceType } from "../../types/resume";
+import type { VolunteerExperience } from "../../types/resume";
 import ResumeSection from "./ResumeSection.astro";
 
 export interface Props {
-	volunteerExperience: VolunteerExperienceType;
+	volunteerExperience: VolunteerExperience;
 }
 
 const { volunteerExperience } = Astro.props;
 
 const volunteerItems = [volunteerExperience];
 
-const getDate = (item: VolunteerExperienceType) =>
+const getDate = (item: VolunteerExperience) =>
 	`${item.startDate}–${item.endDate}`;
 
-const getOrganization = (item: VolunteerExperienceType) => `${item.organization}`;
+const getOrganization = (item: VolunteerExperience) => `${item.organization}`;
 
-const getPosition = (item: VolunteerExperienceType) => item.position;
+const getPosition = (item: VolunteerExperience) => item.position;
 
-const getLocation = (item: VolunteerExperienceType) => item.location;
+const getLocation = (item: VolunteerExperience) => item.location;
 
-const getResponsibilities = (item: VolunteerExperienceType) =>
+const getResponsibilities = (item: VolunteerExperience) =>
 	item.responsibilities;
 ---
 

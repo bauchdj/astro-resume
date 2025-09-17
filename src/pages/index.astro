@@ -1,6 +1,7 @@
 ---
 import Education from "../components/resume/Education.astro";
 import Experience from "../components/resume/Experience.astro";
+import Hobbies from "../components/resume/Hobbies.astro";
 import Header from "../components/resume/Header.astro";
 import Skills from "../components/resume/Skills.astro";
 import VolunteerExperience from "../components/resume/VolunteerExperience.astro";
@@ -14,4 +15,5 @@ import ResumeLayout from "../layouts/ResumeLayout.astro";
   <Experience experience={resumeData.experience} />
   <VolunteerExperience volunteerExperience={resumeData.volunteerExperience} />
   <Skills skills={resumeData.skills} />
+  <Hobbies hobbies={resumeData.hobbies} />
 </ResumeLayout>
