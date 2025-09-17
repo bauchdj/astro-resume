@@ -161,4 +161,14 @@ export const resumeData: ResumeData = {
 		"Connect 4",
 		"Mastermind",
 	],
+	coverLetter: {
+		recipient: "Hiring Manager",
+		recipientTitle: "Hiring Manager",
+		paragraphs: [
+			"I am writing to express my interest in the software engineering position at your company. As a Computer Science student at Brigham Young University with a 3.94 GPA and extensive experience in full-stack development, I am confident I can contribute meaningfully to your team.",
+			"My technical background includes proficiency in TypeScript, Python, and modern web frameworks like Next.js and React. I have co-founded two startups where I served as CTO, architecting scalable systems and leading technical development. At Nimbus, I integrated multiple cloud storage APIs and established CI/CD pipelines, while at Borea, I created a Python SDK generator that produced 25+ customer SDKs.",
+			"Beyond my entrepreneurial experience, I have worked as a full-stack developer intern at Base2Summit LLC, where I built custom data visualization charts and resolved critical system issues. I also have extensive experience as a teaching assistant, having mentored 50-60 students weekly in web programming and computer science fundamentals.",
+			"I am particularly drawn to this opportunity because it aligns with my passion for creating robust, user-focused software solutions. My combination of technical expertise, leadership experience, and strong communication skills makes me well-suited to contribute to your team's success.",
+		],
+	},
 };

@@ -47,6 +47,12 @@ export interface Skills {
 
 export type Hobbies = string[];
 
+export interface CoverLetterData {
+	recipient: string;
+	recipientTitle: string;
+	paragraphs: string[];
+}
+
 export interface ResumeData {
 	name: string;
 	contact: ContactInfo;
@@ -55,4 +61,5 @@ export interface ResumeData {
 	volunteerExperience: VolunteerExperience;
 	skills: Skills;
 	hobbies: Hobbies;
+	coverLetter: CoverLetterData;
 }

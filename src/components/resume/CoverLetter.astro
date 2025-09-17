@@ -1,0 +1,100 @@
+---
+import type { CoverLetterData } from "../../types/resume";
+import Header from "./Header.astro";
+
+export interface Props {
+	name: string;
+	contact: {
+		phone: string;
+		email: string;
+		linkedin: string;
+		website: string;
+	};
+	coverLetter: CoverLetterData;
+}
+
+const { name, contact, coverLetter } = Astro.props;
+---
+
+<div class="cover-letter-container">
+	<Header name={name} contact={contact} />
+	
+	<div class="cover-letter-content">
+		<div class="left-column">
+            <div class="left-column-content">
+                <b class="date">{new Date().getDate()} {new Date().toLocaleDateString('en-US', { 
+                    month: 'long', 
+                    year: 'numeric' 
+                })}</b>
+                
+                <p class="recipient-info">
+                    {coverLetter.recipient}<br />
+                </p>
+            </div>
+		</div>
+		
+		<div class="right-column">
+			<b class="greeting">Dear {coverLetter.recipientTitle},</b>
+			
+			<div class="body-paragraphs">
+				{coverLetter.paragraphs.map((paragraph) => (
+					<p>{paragraph}</p>
+				))}
+			</div>
+			
+			<p class="closing">
+				Sincerely<br /><br />
+				{name}
+			</p>
+		</div>
+	</div>
+</div>
+
+<style>
+	.cover-letter-container {
+		page-break-before: always;
+		max-width: 7.5in;
+		margin: 0 auto;
+	}
+
+	.cover-letter-content {
+		margin-top: 1rem;
+		display: flex;
+		gap: 2rem;
+	}
+
+	.left-column {
+		flex: 0 0 33%;
+		align-self: flex-start;
+        display: flex;
+        justify-content: center;
+	}
+
+	.right-column {
+		flex: 1;
+		max-width: 50%;
+	}
+
+	.date {
+		margin-bottom: 1rem;
+		display: block;
+	}
+
+	.recipient-info {
+		margin-bottom: 1rem;
+	}
+
+	.greeting {
+		margin-bottom: 1rem;
+		display: block;
+	}
+
+	.body-paragraphs p {
+		margin-bottom: 1rem;
+		text-align: justify;
+	}
+
+	.closing {
+		margin-top: 1.5rem;
+	}
+</style>
