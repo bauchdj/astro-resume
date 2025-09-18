@@ -1,22 +1,20 @@
 ---
-import CoverLetter from "../components/resume/CoverLetter.astro";
-import Education from "../components/resume/Education.astro";
-import Experience from "../components/resume/Experience.astro";
-import Header from "../components/resume/Header.astro";
-import Hobbies from "../components/resume/Hobbies.astro";
-import Skills from "../components/resume/Skills.astro";
-import VolunteerExperience from "../components/resume/VolunteerExperience.astro";
+import CoverLetter from "../components/cover-letter/CoverLetter.astro";
+import Resume from "../components/resume/Resume.astro";
 import { resumeData } from "../data/resume";
 import ResumeLayout from "../layouts/ResumeLayout.astro";
 ---
 
 <ResumeLayout title={`${resumeData.name} - Resume`}>
-  <Header name={resumeData.name} contact={resumeData.contact} />
-  <Education education={resumeData.education} />
-  <Experience experience={resumeData.experience} />
-  <VolunteerExperience volunteerExperience={resumeData.volunteerExperience} />
-  <Skills skills={resumeData.skills} />
-  <Hobbies hobbies={resumeData.hobbies} />
+  <Resume 
+    name={resumeData.name}
+    contact={resumeData.contact}
+    education={resumeData.education}
+    experience={resumeData.experience}
+    volunteerExperience={resumeData.volunteerExperience}
+    skills={resumeData.skills}
+    hobbies={resumeData.hobbies}
+  />
   <CoverLetter 
     name={resumeData.name} 
     contact={resumeData.contact} 

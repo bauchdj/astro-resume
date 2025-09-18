@@ -20,47 +20,53 @@ const { name, contact, coverLetter } = Astro.props;
 	<Header name={name} contact={contact} />
 	
 	<div class="cover-letter-content">
-		<div class="left-column">
-            <div class="left-column-content">
-                <b class="date">{new Date().getDate()} {new Date().toLocaleDateString('en-US', { 
-                    month: 'long', 
-                    year: 'numeric' 
-                })}</b>
-                
-                <p class="recipient-info">
-                    {coverLetter.recipient}<br />
-                </p>
-            </div>
+		<p class="date">{new Date().getDate()} {new Date().toLocaleDateString('en-US', { 
+			month: 'long', 
+			year: 'numeric' 
+		})}</p>
+		
+		<b class="company">
+			{coverLetter.company}
+		</b>
+
+		<p class="internship-title">
+			{coverLetter.internshipTitle}
+		</p>
+
+		<br />
+
+		<p class="greeting">Dear {coverLetter.recipient},</p>
+		
+		<div class="body-paragraphs">
+			{coverLetter.paragraphs.map((paragraph) => (
+				<p>{paragraph}</p>
+			))}
 		</div>
 		
-		<div class="right-column">
-			<b class="greeting">Dear {coverLetter.recipientTitle},</b>
-			
-			<div class="body-paragraphs">
-				{coverLetter.paragraphs.map((paragraph) => (
-					<p>{paragraph}</p>
-				))}
-			</div>
-			
-			<p class="closing">
-				Sincerely<br /><br />
-				{name}
-			</p>
-		</div>
+		<p class="closing">
+			Sincerely,<br /><br />
+			<b>{name}</b>
+		</p>
 	</div>
 </div>
 
 <style>
+	@media print {
+		.cover-letter-container {
+			max-width: none;
+			margin: 0 !important;
+			padding: 0.61in; /* 0.39 is default in Chrome */
+		}
+	}
+
 	.cover-letter-container {
 		page-break-before: always;
-		max-width: 7.5in;
+		max-width: 6.5in;
 		margin: 0 auto;
 	}
 
 	.cover-letter-content {
 		margin-top: 1rem;
-		display: flex;
-		gap: 2rem;
 	}
 
 	.left-column {
@@ -80,8 +86,7 @@ const { name, contact, coverLetter } = Astro.props;
 		display: block;
 	}
 
-	.recipient-info {
-		margin-bottom: 1rem;
+	.company, .internship-title {
 	}
 
 	.greeting {

@@ -1,0 +1,22 @@
+---
+import type { ContactInfo } from "../../types/resume";
+
+export interface Props {
+	name: string;
+	contact: ContactInfo;
+}
+
+const { name, contact } = Astro.props;
+---
+
+<header class="cover-letter-header">
+	<b>{name}</b>
+  <p>{contact.phone}</p>
+  <p>{contact.email}</p>
+</header>
+
+<style>
+  .cover-letter-header {
+    margin-bottom: 1rem;
+  }
+</style>

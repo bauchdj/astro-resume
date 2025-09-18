@@ -1,0 +1,28 @@
+---
+import type { ResumeProps } from "../../types/resume";
+import Education from "./Education.astro";
+import Experience from "./Experience.astro";
+import Header from "./Header.astro";
+import Hobbies from "./Hobbies.astro";
+import Skills from "./Skills.astro";
+import VolunteerExperience from "./VolunteerExperience.astro";
+
+export interface Props extends ResumeProps {}
+
+const {
+	name,
+	contact,
+	education,
+	experience,
+	volunteerExperience,
+	skills,
+	hobbies,
+} = Astro.props;
+---
+
+<Header name={name} contact={contact} />
+<Education education={education} />
+<Experience experience={experience} />
+<VolunteerExperience volunteerExperience={volunteerExperience} />
+<Skills skills={skills} />
+<Hobbies hobbies={hobbies} />
