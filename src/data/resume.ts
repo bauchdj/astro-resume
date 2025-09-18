@@ -39,10 +39,10 @@ export const resumeData: ResumeData = {
 			startDate: "Apr. 2025",
 			endDate: "Sept. 2025",
 			responsibilities: [
-				"Integrated Google Drive, OneDrive, Dropbox, and Box APIs to enable file management via one login", // , reducing context switching",
-				"Set up CI/CD pipeline with Cloudflare and Fly.io, automating deployments and increasing deployment frequency by 30x", // to automate production and pull request deployments, increasing deployment frequency by 30x",
-				"Architected and deployed Hono server and Next.js client to deploy separately, decreasing scaling costs by 200%", //  in order to securely and efficiently handle OAuth and UI application logic",
-				"Reviewed and merged 30+ pull requests and provided feedback within 24 hours",
+				"Integrated Google Drive, OneDrive, Dropbox, and Box APIs to enable file management via one login",
+				"Set up CI/CD pipeline with Cloudflare and Fly.io, automating deployments and increasing deployment speed by 30x",
+				"Architected and deployed Hono server and Next.js client to deploy separately, cutting scaling cost by 3x",
+				"Reviewed and merged 30+ pull requests over 3 months and provided feedback within 24 hours",
 			],
 		},
 		{
@@ -52,8 +52,8 @@ export const resumeData: ResumeData = {
 			startDate: "Oct. 2024",
 			endDate: "Apr. 2025",
 			responsibilities: [
-				"Created a Python SDK generator to automate SDK development and produced 25+ SDKs for customers", //, eliminating manual development", // eliminating time spent manually developing SDKs",
-				"Validated and iterated with 2 design partners and shipped 7 releases of our MVP, while balancing a full-time course load",
+				"Created a Python SDK generator that produced 25+ customer SDKs, eliminating manual development",
+				"Co-developed the MVP with 2 design partners and shipped 7 releases while balancing a full-time course load",
 			],
 		},
 		{
@@ -64,9 +64,7 @@ export const resumeData: ResumeData = {
 			endDate: "Aug. 2024",
 			responsibilities: [
 				"Constructed 10+ custom charts to view critical system failure trends, reducing time spent investigating tickets",
-				"Resolved 5–15 issues per week to fix a critical system monitoring web application, increasing resolved tickets by 10x",
-				// "Collaborated via Jira, GitHub, and Microsoft Teams to manage 20+ issues and pull requests, responding within 4-6 hours ",
-				// "Coordinated 20+ issues via Github and Jira to accelerate release cadence to 3/week and improve review turnaround to 4 hours",
+				"Resolved 5–15 issues per week in a critical system monitoring web application, increasing resolved tickets by 10x",
 			],
 		},
 		{
@@ -76,8 +74,8 @@ export const resumeData: ResumeData = {
 			startDate: "Jan. 2024",
 			endDate: "Apr. 2024",
 			responsibilities: [
-				"Mentored 50–60 students 1:1 weekly to architect and debug software, empowering students to design independently", // enabling students to design software on their own",
-				"Code-reviewed and graded 60+ student assignments weekly via GitHub, providing feedback within 12 hours",
+				"Mentored 50–60 students 1:1 weekly to architecture and debugging, empowering students to design independently",
+				"Code-reviewed and graded 60+ student assignments weekly via GitHub, stengthening the relationships with students and helping students gain essential code quality skills",
 			],
 		},
 		{
@@ -87,9 +85,8 @@ export const resumeData: ResumeData = {
 			startDate: "Aug. 2023",
 			endDate: "Apr. 2024",
 			responsibilities: [
-				"Instructed 40–50 lab students weekly on computer science fundamentals with Python, increasing attendance by 25%",
-				"Mentored 25–35 students 1:1 weekly to debug code and explain concepts, enabling independent engineering", // enabling them to solve problems themselves through engineering",
-				// "Installed and debugged Python across Windows, macOS, and Linux environments",
+				"Instructed 40–50 lab students weekly on computer science fundamentals with Python, raising attendance by 25% more than the avg lab attendance",
+				"Mentored 25–35 students 1:1 weekly on debugging and core concepts, enabling independent engineering",
 			],
 		},
 	],
@@ -100,12 +97,10 @@ export const resumeData: ResumeData = {
 		startDate: "Oct. 2020",
 		endDate: "Oct. 2022",
 		responsibilities: [
-			// "Compiled Facebook ads data and generated weekly reports for 6 months",
-			// "Budgeted and ran Facebook ads for the southeastern Colorado area for 6 months",
-			"Ran Facebook ads and compiled ad data for 6 months, increasing lead generation by 20x and decreasing cost by 10x",
-			"Led individual and group trainings weekly for volunteers for 18 months, empowering volunteers to serve more effectively",
-			"Scheduled and coordinated appointments with 50+ people per week, strengthening relationships and the community",
-			"Developed a healthy, hard-working relationship with 14 different assigned volunteers over 2 years",
+			"Managed Facebook ads and compiled ad data for 6 months, increasing lead generation by 20x and decreasing cost by 10x",
+			"Led individual and group trainings weekly for volunteers for 18 months, improving volunteer mental health and engagement",
+			"Scheduled and coordinated 50+ weekly appointments, strengthening the community and volunteer relationships",
+			"Developed a healthy, hard-working relationship with 14 different assigned full-time volunteers over 2 years of service",
 		],
 	},
 	skills: {
