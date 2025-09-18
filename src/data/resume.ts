@@ -40,8 +40,8 @@ export const resumeData: ResumeData = {
 			endDate: "Sept. 2025",
 			responsibilities: [
 				"Integrated Google Drive, OneDrive, Dropbox, and Box APIs to enable file management via one login",
-				"Set up CI/CD pipeline with Cloudflare and Fly.io, automating deployments and increasing deployment speed by 30x",
-				"Architected and deployed Hono server and Next.js client to deploy separately, cutting scaling cost by 3x",
+				"Set up CI/CD pipeline with Cloudflare and Fly.io, automating deployments and increasing deployment frequency by 30x",
+				"Architected and deployed Hono server and Next.js client for independent deployments, cutting scaling costs by 3x",
 				"Reviewed and merged 30+ pull requests over 3 months and provided feedback within 24 hours",
 			],
 		},
@@ -52,7 +52,7 @@ export const resumeData: ResumeData = {
 			startDate: "Oct. 2024",
 			endDate: "Apr. 2025",
 			responsibilities: [
-				"Created a Python SDK generator that produced 25+ customer SDKs, eliminating manual development",
+				"Built a Python SDK generator that produced 25+ customer SDKs, eliminating manual development and slow release cycles",
 				"Co-developed the MVP with 2 design partners and shipped 7 releases while balancing a full-time course load",
 			],
 		},
@@ -63,7 +63,7 @@ export const resumeData: ResumeData = {
 			startDate: "June 2024",
 			endDate: "Aug. 2024",
 			responsibilities: [
-				"Constructed 10+ custom charts to view critical system failure trends, reducing time spent investigating tickets",
+				"Constructed 10+ custom charts to view critical system failure trends, reducing ticket investigation time",
 				"Resolved 5–15 issues per week in a critical system monitoring web application, increasing resolved tickets by 10x",
 			],
 		},
@@ -119,6 +119,7 @@ export const resumeData: ResumeData = {
 			"Atlassian Jira",
 			"OOP",
 			"Bun.sh",
+			"Vitest",
 			"Jest",
 			"Debugging",
 			"Shell scripting",
