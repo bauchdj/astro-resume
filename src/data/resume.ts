@@ -85,7 +85,7 @@ export const resumeData: ResumeData = {
 			startDate: "Aug. 2023",
 			endDate: "Apr. 2024",
 			responsibilities: [
-				"Instructed 40–50 lab students weekly on computer science fundamentals with Python, raising attendance by 25% more than the avg lab attendance",
+				"Instructed 40–50 lab students weekly on computer science fundamentals with Python, raising attendance by 25%",
 				"Mentored 25–35 students 1:1 weekly on debugging and core concepts, enabling independent engineering",
 			],
 		},
@@ -161,13 +161,17 @@ export const resumeData: ResumeData = {
 		"Mastermind",
 	],
 	coverLetter: {
-		recipient: "Hiring Manager",
-		recipientTitle: "Hiring Manager",
+		recipient: "Lucid Intern Coordinator",
+		recipientTitle: "Lucid Intern Coordinator",
 		paragraphs: [
-			"I am writing to express my interest in the software engineering position at your company. As a Computer Science student at Brigham Young University with a 3.94 GPA and extensive experience in full-stack development, I am confident I can contribute meaningfully to your team.",
-			"My technical background includes proficiency in TypeScript, Python, and modern web frameworks like Next.js and React. I have co-founded two startups where I served as CTO, architecting scalable systems and leading technical development. At Nimbus, I integrated multiple cloud storage APIs and established CI/CD pipelines, while at Borea, I created a Python SDK generator that produced 25+ customer SDKs.",
-			"Beyond my entrepreneurial experience, I have worked as a full-stack developer intern at Base2Summit LLC, where I built custom data visualization charts and resolved critical system issues. I also have extensive experience as a teaching assistant, having mentored 50-60 students weekly in web programming and computer science fundamentals.",
-			"I am particularly drawn to this opportunity because it aligns with my passion for creating robust, user-focused software solutions. My combination of technical expertise, leadership experience, and strong communication skills makes me well-suited to contribute to your team's success.",
+			"I am writing to express my enthusiasm in the Software Engineer Internship. Lucid’s values of thoughful software design and openness to new solutions align with mine. Hunter has spoken highly of Lucid and the teams he has been a part of. I want to contribute my skills at Lucid. ",
+			"I am experienced in web development, full-stack applications, the software development lifecycle, testing, deploying, and collaborating on large projects. Most of my experience comes from the Sandbox program at BYU and my startups: Nimbus, Borea. ",
+			"I believe that Lucid will help me take my skills to the next level while allowing me to make valuable contributions to the high-quality products at Lucid (and stay in Utah so I can continue my skiing obsession). ",
+			"Thank you for your consideration. I look forward to hearing back from you soon. ",
+			// "I am writing to express my interest in the software engineering position at your company. As a Computer Science student at Brigham Young University with a 3.94 GPA and extensive experience in full-stack development, I am confident I can contribute meaningfully to your team.",
+			// "My technical background includes proficiency in TypeScript, Python, and modern web frameworks like Next.js and React. I have co-founded two startups where I served as CTO, architecting scalable systems and leading technical development. At Nimbus, I integrated multiple cloud storage APIs and established CI/CD pipelines, while at Borea, I created a Python SDK generator that produced 25+ customer SDKs.",
+			// "Beyond my entrepreneurial experience, I have worked as a full-stack developer intern at Base2Summit LLC, where I built custom data visualization charts and resolved critical system issues. I also have extensive experience as a teaching assistant, having mentored 50-60 students weekly in web programming and computer science fundamentals.",
+			// "I am particularly drawn to this opportunity because it aligns with my passion for creating robust, user-focused software solutions. My combination of technical expertise, leadership experience, and strong communication skills makes me well-suited to contribute to your team's success.",
 		],
 	},
 };
