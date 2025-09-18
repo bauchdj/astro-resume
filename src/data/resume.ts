@@ -58,7 +58,7 @@ export const resumeData: ResumeData = {
 		},
 		{
 			company: "Base2Summit LLC",
-			position: "Full Stack Developer Intern",
+			position: "Full-Stack Developer Intern",
 			location: "Boulder, CO",
 			startDate: "June 2024",
 			endDate: "Aug. 2024",
@@ -162,10 +162,10 @@ export const resumeData: ResumeData = {
 	],
 	coverLetter: {
 		company: "Lucid Software",
-		internshipTitle: "Software Engineer Intern",
-		recipient: "Lucid Intern Coordinator",
+		positionTitle: "Full-time Software Engineer",
+		recipient: "Lucid Hiring Manager",
 		paragraphs: [
-			"I am writing to express my enthusiasm for the Software Engineer Internship. Lucid’s values of thoughtful software design and innovative solutions align with my ambitions to write code that makes a difference. I met Hunter through the Sandbox program at BYU, and he has spoken highly of Lucid and the teams he has participated in. I am interested in joining fellow ambitious developers who use their skills to create quality software.",
+			"I am writing to express my enthusiasm for the full-time Software Engineer position. Lucid’s values of thoughtful software design and innovative solutions align with my ambitions to write code that makes a difference. I met Hunter through the Sandbox program at BYU, and he has spoken highly of Lucid and the teams he has participated in. I am interested in joining fellow ambitious developers who use their skills to create quality software.",
 			"I am experienced in web development, full-stack applications, the software development lifecycle, testing, deploying, and collaborating on large projects. Most of my experience comes from the Sandbox program at BYU and my startups, Nimbus and Borea. Both of these startups taught me how to collaborate on a large project and build software that solves an important problem. I love to learn new things, and I am passionate about solving real world problems through programming.",
 			"I believe that Lucid will help me take my skills to the next level, while allowing me to make valuable contributions to its high-quality products. I am excited to be in touch, and I will welcome the opportunity to contribute to Lucid's mission.",
 		],

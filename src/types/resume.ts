@@ -49,7 +49,7 @@ export type Hobbies = string[];
 
 export interface CoverLetterData {
 	company: string;
-	internshipTitle: string;
+	positionTitle: string;
 	recipient: string;
 	paragraphs: string[];
 }
