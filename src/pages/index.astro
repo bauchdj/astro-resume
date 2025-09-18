@@ -5,6 +5,8 @@ import { resumeData } from "../data/resume";
 import ResumeLayout from "../layouts/ResumeLayout.astro";
 ---
 
+<div class="spacer"></div>
+
 <ResumeLayout title={`${resumeData.name} - Resume`}>
   <Resume 
     name={resumeData.name}
@@ -15,9 +17,26 @@ import ResumeLayout from "../layouts/ResumeLayout.astro";
     skills={resumeData.skills}
     hobbies={resumeData.hobbies}
   />
+
+  <div class="spacer"></div>
+
   <CoverLetter 
     name={resumeData.name} 
     contact={resumeData.contact} 
     coverLetter={resumeData.coverLetter} 
   />
 </ResumeLayout>
+
+<div class="spacer"></div>
+
+<style>
+  @media print {
+    .spacer {
+      display: none;
+    }
+  }
+
+  .spacer {
+    height: 0.5in;
+  }
+</style>
