@@ -75,7 +75,7 @@ export const resumeData: ResumeData = {
 			endDate: "Apr. 2024",
 			responsibilities: [
 				"Mentored 50–60 students 1:1 weekly to architecture and debugging, empowering students to design independently",
-				"Code-reviewed and graded 60+ student assignments weekly via GitHub, stengthening the relationships with students and helping students gain essential code quality skills",
+				"Code-reviewed and graded 60+ student assignments weekly via GitHub, improving code quality and feedback loops",
 			],
 		},
 		{
