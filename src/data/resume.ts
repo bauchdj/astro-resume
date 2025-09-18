@@ -85,9 +85,9 @@ export const resumeData: ResumeData = {
 			startDate: "Aug. 2023",
 			endDate: "Apr. 2024",
 			responsibilities: [
-				"Instructed 40–50 students weekly on CS fundamentals with Python",
-				"Mentored 25–35 students one-on-one weekly to debug code and explain CS concepts",
-				"Installed and debugged Python across Windows, macOS, and Linux environments",
+				"Instructed 40–50 students weekly on computer science fundamentals with Python to ",
+				"Mentored 25–35 students one-on-one weekly to debug code and explain concepts, enabling them to solve problems themselves through engineering",
+				// "Installed and debugged Python across Windows, macOS, and Linux environments",
 			],
 		},
 	],
