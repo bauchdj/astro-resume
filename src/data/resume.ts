@@ -108,10 +108,13 @@ export const resumeData: ResumeData = {
 			"TypeScript",
 			"JavaScript",
 			"Python",
+			"Bash",
 			"Java",
 			"C++",
 			"C",
 			"SQL",
+			"Flutter",
+			"Rust",
 		],
 		softwareDevelopment: [
 			"Git",
